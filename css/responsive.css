@@ -1,0 +1,74 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+@media (max-width: 991px){
+    button.navbar-toggler {
+        color: #fff;
+        background: #272626;
+        padding: 6px 15px;
+    }
+    
+    /* nav.navbar.navbar-expand-lg.main-menu { */
+        .main-menu ul.navbar-nav{
+        background: rgb(14, 13, 13);
+        width: 100%;
+        opacity: .85;
+    }
+    
+    .main-menu ul.navbar-nav li a {
+        padding: 8px  0;
+    }
+}
+@media (max-width: 991px){
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    .header-content span {
+        font-size: 2rem;
+    }
+    .about-right-text h2{
+        margin-top: 20px;
+    }
+    .about-right-text p{
+        margin-top: 10px;
+    }
+    .section-padding {
+        padding: 25px 0;
+    }
+    .top-space {
+        margin-top: 50px;
+    }
+    .counter-box {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 781px){
+    .header-content h1,
+    .header-content span{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .header-content h2{
+        font-size: 1.5rem;
+    }
+    .header-content h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 576px){
+    .header-content h1{
+        font-size: 1.2rem;
+    }
+    .header-content span{
+        font-size: 1.2rem;
+    }
+    .header-content h2{
+        font-size: 1rem;
+    }
+    .header-content h3{
+        font-size: 1.2rem;
+    }
+}

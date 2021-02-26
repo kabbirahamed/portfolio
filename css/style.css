@@ -1,0 +1,810 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Company Name: UnivaHost | ThemeAsia | Shipsoft
+Version:    2.0.0
+Last change:    09/07/19 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+/* ==========================================
+   GOGGLE_FONTS
+========================================== */
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Courgette', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.section-padding{
+    padding: 70px 0;
+}
+.top-space{
+    margin-top: 70px;
+}
+
+html, body{
+    height: 100%;
+   }
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+/* .header-main {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+} */
+
+.header-main:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    top: 0;
+    background: #131212;
+    opacity: 0;
+    z-index: -1;
+}
+/* nav-bgcolor */
+.bgcolor .scrolled{
+    background-color: rgb(218, 35, 35);
+}
+/* --------------------- */
+
+nav.main-menu ul {
+    margin-left: auto;
+}
+nav.main-menu ul li {
+    float: left;
+    margin-left: 24px;
+}
+
+nav.main-menu ul li a {
+    color: #e97575;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 35px 0;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav.main-menu ul li a:hover{
+    color: rgb(219, 13, 126);
+}
+.logo img {
+    margin-top: 33px;
+}
+/* ==============header-css====================== */
+.header-img{
+    background: url('../img/header-img.jpg');
+    height:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.header-img:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 10, 10);
+    opacity: .5;
+    z-index: -1;
+}
+.d-table{
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.d-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.header-img .container,
+.header-img .row,
+.header-img .col-md-12{
+    height: 100%;
+}
+.header-content h3,
+.header-content h2{
+    color: rgb(236, 227, 227);
+}
+.header-content h1,
+.header-content span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color:#fff;
+}
+.header-content span{
+    color: #e00b59;
+}
+.header-content a:hover {
+    color: #dc1b1b;
+    background: #fff;
+}
+.header-content a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #dc1b1b;
+    padding: 2px 8px;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 5px;
+    transition: .5s;
+    width: 35px;
+    border: 2px solid #fff;
+}
+.header-content h1{
+    margin-bottom: 30px;
+}
+
+.header-content a:hover {
+    color: #ec1e1e;
+    background: #fff;
+    border: 2px solid rgb(201, 17, 17);
+}
+/* =====================section-header=========================== */
+.section-header h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.section-header span{
+    color: crimson;
+    font-family: 'Raleway', sans-serif;
+}
+.section-header h2:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 110px;
+    top: 100%;
+    left: 50%;
+    background: red;
+    margin-left: -55px;
+    margin-top: 8px;
+    z-index: 0;
+}
+/* .section-header h2:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #000700;
+    top: 100%;
+    margin-left: -8px;
+    border-radius: 50px;
+    left: 50%;
+    z-index: 1;
+} */
+/* =================about-me====================== */
+.about{
+    background: rgb(240, 238, 238);
+}
+.about-left img {
+    width: 100%;
+    height: auto;
+    border: 5px solid rgb(175, 80, 80);
+    border-radius: 0px 86px 0px 86px;
+}
+.about-right-text .expertise{
+    margin-top: 0;
+}
+.about-right-text h2{
+    color: #b43636;
+    font-family:'Ubuntu', sans-serif;
+    margin-top: 20px;
+}
+.about-right-text p{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.about-right-text a {
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: rgb(175, 80, 80);
+
+    padding: 5px 15px;
+    border-radius: 40px;
+    transition: all 0.5s ease 0s;
+    border: 2px solid crimson;
+}
+ .about-right-text a:hover{
+     color: rgb(243, 235, 237);
+     background: #000;
+     border: 2px solid crimson;
+ }
+ .about-right-text .expertise {
+    margin-top: -13px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Courgette', cursive;
+}
+/* ====================services========================= */
+.services-box{
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.services-box i{
+    color: red;
+    font-size: 47px;
+}
+
+.services-box h3 {
+    font-size: 27px;
+    font-weight: 500;
+    color: black;
+    margin: 14px 0;
+    font-family: 'Ubuntu', sans-serif; 
+    text-transform: capitalize;
+}
+.services-box p {
+    line-height: 1.5;
+    color: black;
+}
+.services-box svg {
+    font-size: 40px;
+    color: rgb(175, 80, 80);
+}
+/* ===========counter================= */
+
+.counter{
+    background: url('..//img/counter.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.counter::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 10, 10);
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: -1;
+}
+
+.counter-box .counter-number{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.counter-box .counter-name{
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif; 
+    text-transform: uppercase;
+    
+}
+.counter-box svg {
+    font-size: 3rem;
+    margin-bottom: 18px;
+   
+}
+/* ===========counter-number-end============= */
+
+/* ===========portfolio-start============= */
+section.portfolio {
+    background: #F0EEEE;
+}
+
+.portfolio-item img{
+    max-width: 100%;
+    height: auto;
+}
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu button {
+    background: transparent;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 5px;
+    color: rgb(10, 10, 10);
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .6s;
+}
+
+.portfolio-menu button:hover {
+    color: red;
+}
+.portfolio-item{
+    margin-top: 35px;
+    position: relative;
+    transition: .3s;
+}
+button.mixitup-control-active {
+    color: red;
+}
+.portfolio-item-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background: #1a1717;
+    z-index: 1;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    cursor: pointer;
+    
+}
+.portfolio-item:hover .portfolio-item-hover{
+    visibility: visible;
+    opacity: .8;
+}
+.portfolio-item-hover a{
+    font-size: 25px;
+   
+    visibility: visible;
+}
+/* ============testimonial-start========== */
+.testimonial{
+    background: url('../img/testimonial.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.item .img {
+    max-width: 100%;
+}
+
+.owl-carousel.owl-carousel-testimonial img {
+    width: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+h3.test-name {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #000;
+}
+
+
+.item p {
+    margin-top: 16px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+/* ============testimonial-end========== */
+
+/* ============contact========== */
+.contact{
+    background: url('..//img/contactbg.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-attachment: fixed;
+    margin-top: 50px;
+ }
+ .contact:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .5;
+    z-index: -1;
+}
+.contact input {
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 35px;
+    height: 50px;
+}
+.contact textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 120px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.contact button {
+    background: rgb(32, 24, 24);
+    color: rgb(241, 232, 232);
+    border: 2px solid #fdf7f7;
+    padding: 6px 44px;
+    border-radius: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.contact button:hover {
+    background: #edebeb;
+    border: 2px solid #d31313;
+    color: #ca1b1b;
+    font-size: 17px;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color: #fff;
+}
+
+/* responsive-menu */
+
+nav.navbar.navbar-expand-lg.main-menu {
+    padding: 0;
+}
+/* ==============skill-css=============== */
+.skill-left h3, .skill-right h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+    margin: 14px 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.skill-left p, 
+.skill-right p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+/* ================skill-section============== */
+section.skill{
+    background: #F0EEEE;
+    margin-bottom: 50px;
+}
+
+/* ================skill-progress-bar============== */
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    background: #d9dce7;
+    height: 35px;
+    border-radius: 50px;
+    width: 100%;
+  }
+  
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #b61414;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+  }
+  
+  .skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #fa6aa6;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    color: #5e1212;
+    color: rgb(0 0 0 / 75%);
+  }
+  .portfolio-skill .skillbar {
+    background: #d9dce7;
+}  
+/* ==========Scroll-bar-start============= */
+.scrolltop .icon {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    color: #fff;
+    opacity: .5;
+    z-index: 9;
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(15, 127, 155);
+    display: none;
+    cursor: pointer;
+    opacity: .5;
+    z-index: 9;
+}
+/* ==========Scroll-bar-end============= */
+.bgcolor{
+    transition: 0.5s ease;
+   
+}
+.bgcolor.scrolled{
+    background-color: #edecf0;
+}
+
+/* ==========footer================== */
+footer.site-footer{
+    background: url('..//img/footer11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .9;
+    
+}
+.site-footer
+{
+  background-color: #4f4d53;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#141313;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6{
+  color: #b42c2c;
+  font-size: 1.2rem;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:1.3px;
+  margin-bottom:15px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a{
+    color: #e6edee;
+    font-size: .9rem;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#ad1c59;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.mail svg, .mobile svg {
+    color: #b8463c;
+    font-size: 13px;
+    margin-right: 6px;
+}
+.site-footer .social-icons a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#b13227;
+}
+.mail, .mobile {
+    color: #4e899f;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+.copyright-text{
+  margin:0;
+  color:#e6edee;
+  font-size: .8rem;
+  font-weight: 100;
+  font-family: 'Ubuntu', sans-serif;
+}
+.footer-links svg {
+    color: #c05555;
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+.copyright-text a{
+    color: #b61414;
+}
+.credit{
+    font-size: .6rem;
+    color: rgb(41, 37, 37);
+}
+.credit a{
+    color: #863131;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.text-justify {
+    text-align: justify!important;
+    color: #e6edee;
+    font-size: .9rem;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
